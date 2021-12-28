@@ -1,0 +1,129 @@
+
+#container {
+    overflow: hidden;
+}
+
+#header {
+    height: 60px;
+    background-color: silver;
+}
+
+.header-menu {
+    position: relative;
+    width: 105px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.header-menu .button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 14px;
+}
+
+.header-menu .button span {
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.header-menu:hover .button > span:nth-child(1),
+.header-menu:hover .button > span:nth-child(4) {
+    left: 4px;
+}
+
+.header-menu:hover .button > span:nth-child(2) {
+    left: -4px;
+}
+
+.navbar-g {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 7;
+    width: 448px;
+    height: 100%;
+    background-color: #000;
+    background-size: 68px auto;
+    -webkit-transform: translate3d(448px, 0px, 0);
+    transform: translate3d(448px, 0px, 0);
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    -o-transition: transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+    -webkit-overflow-scrolling: touch;   
+}
+
+.navbar-g .list-nav .item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+  
+.navbar-g .navbar-close,
+.navbar-g .list-nav .link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 72px;
+    padding: 5px 0 5px 18px;
+    font-family: "a-otf-futo-go-b101-pr6n", sans-serif;
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-decoration: none;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.navbar-g-in {
+    position: relative;
+    padding: 0px 32px 40px;
+}
+
+.navbar-g .list-nav .link:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.navbar-g.navbar-open {
+    -webkit-transform: translate3d(0px, 0px, 0);
+    transform: translate3d(0px, 0px, 0);
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
+    transition: -webkit-transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
+    -o-transition: transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
+    transition: transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
+    transition: transform 500ms cubic-bezier(0.42, 0, 0.3, 1), -webkit-transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
+}
