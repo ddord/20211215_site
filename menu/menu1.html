@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <script>
+        function sidebar_open() {
+            var doc_navbar = document.getElementById("navbar");
+            doc_navbar.classList.add('navbar-open');
+        }
+
+        function sidebar_close() {
+            var doc_navbar = document.getElementById("navbar");
+            doc_navbar.classList.remove('navbar-open');
+        }
+    </script>
+    <title>Menu1</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="header-menu">
+                <div class="button" onclick="sidebar_open()"><span style="top:0px"></span><span
+                        style="top:6px"></span><span style="opacity:0px;top:6px"></span><span style="top:12px"></span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="navbar" class="navbar-g">
+            <div class="navbar-g-in">
+                <div class="navbar-close" style="cursor: pointer;text-align: right;" onclick="sidebar_close()">Close X</div>
+                <ul class="list-nav">
+                    <li class="item"><a class="link" href="#">MENU1</a></li>
+                    <li class="item"><a class="link" href="#">MENU2</a></li>
+                    <li class="item"><a class="link" href="#">MENU3</a></li>
+                    <li class="item"><a class="link" href="#">MENU4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="content-L"></div>
+            <div class="content-R">
+                <ul class="contents-sub-grid">
+                    <li class="item">
+                        <div class="item-box">
+                            <img src="../public/images/diablo2-logo-lg.png">
+                            <p class="item-box-title">Diablo2</p>
+                            <p class="item-box-show">One of the most popular aspects of Diablo II is the Horadric Cube. It's not only a cool way to create items and effects in the game, but it's also great for additional storage space, which is much needed.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

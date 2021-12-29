@@ -1,3 +1,7 @@
+ol, ul {
+    list-style: none;
+}
+
 
 #container {
     overflow: hidden;
@@ -126,4 +130,36 @@
     -o-transition: transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
     transition: transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
     transition: transform 500ms cubic-bezier(0.42, 0, 0.3, 1), -webkit-transform 500ms cubic-bezier(0.42, 0, 0.3, 1);
+}
+
+.contents {
+    min-width: 1280px;
+    margin: 20px;
+}
+
+.contents-L {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.contents-R {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.contents-sub-grid {
+    display: block;
+    width: 100%;
+    margin-bottom: 192px;
+}
+
+.contents-sub-grid .item {
+    width: 280px;
+    margin-left: 32px;
+    margin-bottom: 96px;
+  }
+
+.item-box img {
+    width: 200px;
+    height: 200px;
 }
