@@ -163,3 +163,94 @@ ol, ul {
     width: 200px;
     height: 200px;
 }
+
+.body_title {
+    color: #000;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+#main_container, #sidebar_container {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+}
+
+.box_shadow_3 {
+    box-shadow: 0 0 3px #bbb;
+    box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+    background: #fff;
+}
+
+.list_table_row {
+    clear: both;
+    border-bottom: 1px solid #f3f3f3;
+    background: #fff;
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+.list_subject_a {
+    padding: 8px 0;
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list_table_col_date {
+    width: 65px;
+}
+
+.list_table_col_recommend {
+    width: 28px;
+}
+
+.list_table_col {
+    line-height: 33px;
+    height: 33px;
+}
+
+.list_table_col {
+    float: left;
+    text-align: center;
+}
+
+.color_aaa {
+    color: #aaa;
+}
+
+.smalleng {
+    font-size: 12px;
+}
+
+.list_table_col_subject {
+    text-align: left;
+    position: relative;
+}
+
+.list_table_col_subject, .list_table_col_title_subject {
+    width: 70%;
+}
+
+.list_table_col_hit {
+    width: 50px;
+    float: right;
+}
+
+.cut_str {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

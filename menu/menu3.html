@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +19,7 @@
     </script>
     <title>Menu3</title>
 </head>
+
 <body>
     <div id="container">
         <div id="header">
@@ -27,10 +29,11 @@
                 </div>
             </div>
         </div>
-    
+
         <div id="navbar" class="navbar-g">
             <div class="navbar-g-in">
-                <div class="navbar-close" style="cursor: pointer;text-align: right;" onclick="sidebar_close()">Close X</div>
+                <div class="navbar-close" style="cursor: pointer;text-align: right;" onclick="sidebar_close()">Close X
+                </div>
                 <ul class="list-nav">
                     <li class="item"><a class="link" href="./menu/menu1.html">MENU1</a></li>
                     <li class="item"><a class="link" href="#">MENU2</a></li>
@@ -41,11 +44,438 @@
         </div>
 
         <div class="contents">
-            <div class="content-L"></div>
+            <div class="body_title">게시판</div>
             <div class="content-R">
-                
+                <div>
+                    <div id="list_aside">
+                        <div id="list_table" class="width_660 box_shadow_3">
+
+
+                            <div class="list_table_row_title theme_box2 relative">
+
+
+                                <div class="list_table_col_title list_table_col_date">
+                                    <i class="fa fa-clock help" data-hasqtip="39" oldtitle="게시물 작성 시간" title=""></i>
+                                </div>
+                                <div class="list_table_col_title list_table_col_recommend">
+                                    <i class="fa fa-thumbs-up help" data-hasqtip="40" oldtitle="추천 수" title=""></i>
+                                </div>
+
+                                <div class="list_table_col_title list_table_col_title_subject">
+
+                                </div>
+                                <div class="list_table_col_title list_table_col_hit">
+                                    <i class="fa fa-eye help" data-hasqtip="41" oldtitle="조회 수" title=""></i>
+                                </div>
+                                <div class="list_table_col_title list_table_col_name help" style="text-align: center">
+                                    <i class="fa fa-user" data-hasqtip="42" oldtitle="작성자 닉네임" title=""></i>
+                                </div>
+                            </div>
+
+                            <!-- 목록 -->
+
+                            <div class="list_table_row relative  ">
+
+
+                                <!-- 팀태그 absolute div -->
+                                <!-- 팀태그 끝 -->
+
+
+                                <!-- 날짜 -->
+                                <div class="list_table_col list_table_col_date smalleng color_aaa">
+                                    <span class="list_table_dates">
+
+                                        10:01 </span>
+                                </div><!-- 날짜 끝 -->
+
+
+                                <!-- 추천 -->
+                                <div align="center"
+                                    class="list_table_col list_table_col_recommend smalleng bold theme_key2 help">
+                                    <span data-hasqtip="48" oldtitle="이 게시물이 받은 추천 수입니다." title="">
+                                        2 </span>
+                                </div>
+
+
+
+                                <!-- 제목 -->
+                                <div class="list_table_col list_table_col_subject" align="left">
+
+
+                                    <div class="float_left list_subject_subject">
+
+
+
+                                        <div id="list_icon_1215346" class="float_left list_subject_icon">
+                                            <a
+                                                href="/g2/bbs/board.php?bo_table=humor&amp;sca=%EB%8F%99%EC%98%81%EC%83%81"><i
+                                                    class="far fa-video"
+                                                    style="font-size: 14px; margin-top: 1px;color: ; --fa-secondary-opacity: 1;"
+                                                    data-hasqtip="49"
+                                                    oldtitle="동영상이 담긴 게시물입니다. 클릭하시면 이 카테고리만 정렬하실 수 있습니다."
+                                                    title=""></i></a>
+                                        </div>
+                                        <a class="list_subject_a"
+                                            href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215346"><span
+                                                id="list_subject_1215346">
+                                                <font class="mobile_hide">
+                                                    게시물 111 </font>
+                                                <font class="list_subject_mobile ">
+
+                                                    게시물 111 </font>
+                                            </span></a>
+                                    </div>
+                                </div><!-- 제목 끝 -->
+
+
+                                <!-- 조회수 -->
+                                <div class="list_table_col list_table_col_hit smalleng color_aaa">
+                                    641 </div><!-- 조회수 끝 -->
+
+
+                                <!-- 닉네임 -->
+                                <div class="list_table_col list_table_col_name bold left color_555 cut_str">
+                                    <a class="sideview_a" onclick="call_sideview(this, 'jharden13', '선죄송후반칙', '', '');">
+                                        <span data-hasqtip="50" oldtitle="작성자1 (jharden13)" title=""><span
+                                                class="member">작성자1 </span></span></a>
+                                </div><!-- 닉네임 끝 -->
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="list_table_row relative  ">
+
+
+                                <!-- 팀태그 absolute div -->
+                                <!-- 팀태그 끝 -->
+
+
+                                <!-- 날짜 -->
+                                <div class="list_table_col list_table_col_date smalleng color_aaa">
+                                    <span class="list_table_dates">
+
+                                        09:24 </span>
+                                </div><!-- 날짜 끝 -->
+
+
+                                <!-- 추천 -->
+                                <div align="center"
+                                    class="list_table_col list_table_col_recommend smalleng bold theme_key2 help">
+                                    <span data-hasqtip="51" oldtitle="이 게시물이 받은 추천 수입니다." title="">
+                                        5 </span>
+                                </div>
+
+
+
+                                <!-- 제목 -->
+                                <div class="list_table_col list_table_col_subject" align="left">
+
+
+                                    <div class="float_left list_subject_subject">
+
+
+
+                                        <div id="list_icon_1215337" class="float_left list_subject_icon">
+                                            <a href="/g2/bbs/board.php?bo_table=humor&amp;sca=%EC%9D%BC%EB%B0%98"><i
+                                                    class="far fa-comment-alt fa-flip-horizontal"
+                                                    style="font-size: 13px; margin-top: 3px; color: ; --fa-secondary-opacity: 1;"
+                                                    data-hasqtip="52" oldtitle="일반 게시물입니다." title=""></i></a>
+                                        </div>
+                                        <a class="list_subject_a"
+                                            href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215337"><span
+                                                id="list_subject_1215337">
+                                                <font class="mobile_hide">
+                                                    게시물 222<span class="list_comment_num_a"
+                                                        href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215337&amp;cwin=1"
+                                                        data-hasqtip="53"
+                                                        oldtitle="최근 24시간 내에 남겨진 코멘트가 <span class=&quot;bold&quot;>있는</span> 게시물입니다. 클릭하시면 코멘트만 따로 보실 수 있습니다."
+                                                        title=""><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">4</em></span>
+                                                </font>
+                                                <font class="list_subject_mobile ">
+
+                                                    게시물 222<span class="list_comment_num_a"><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">4</em></span>
+                                                </font>
+                                            </span></a>
+                                    </div>
+                                </div><!-- 제목 끝 -->
+
+
+                                <!-- 조회수 -->
+                                <div class="list_table_col list_table_col_hit smalleng color_aaa">
+                                    1672 </div><!-- 조회수 끝 -->
+
+
+                                <!-- 닉네임 -->
+                                <div class="list_table_col list_table_col_name bold left color_555 cut_str">
+                                    <a class="sideview_a"
+                                        onclick="call_sideview(this, 'hugeblaque', '꿈에서여자가되어내자신한테고백받음', '', '');"><i
+                                            class="help far fa-smile member_icon_greensmile" data-hasqtip="54"
+                                            oldtitle="매니아 커뮤니티의 매너지키기 프로젝트인 스마일 프로젝트에 참여중인 회원입니다. 스마일 프로젝트 가입신청은 사이트 하단의 [그린스마일] 게시판을 이용해 주세요."
+                                            title=""></i> <span data-hasqtip="55"
+                                            oldtitle="꿈에서여자가되어내자신한테고백받음 (hugeblaque)" title=""><span
+                                                class="member">작성자2 </span></span></a>
+                                </div><!-- 닉네임 끝 -->
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="list_table_row relative  ">
+
+
+                                <!-- 팀태그 absolute div -->
+                                <!-- 팀태그 끝 -->
+
+
+                                <!-- 날짜 -->
+                                <div class="list_table_col list_table_col_date smalleng color_aaa">
+                                    <span class="list_table_dates">
+
+                                        09:21 </span>
+                                </div><!-- 날짜 끝 -->
+
+
+                                <!-- 추천 -->
+                                <div align="center"
+                                    class="list_table_col list_table_col_recommend smalleng bold theme_key2 help">
+                                    <span data-hasqtip="56" oldtitle="이 게시물이 받은 추천 수입니다." title="">
+                                        3 </span>
+                                </div>
+
+
+
+                                <!-- 제목 -->
+                                <div class="list_table_col list_table_col_subject" align="left">
+
+
+                                    <div class="float_left list_subject_subject">
+
+
+
+                                        <div id="list_icon_1215336" class="float_left list_subject_icon">
+                                            <a
+                                                href="/g2/bbs/board.php?bo_table=humor&amp;sca=%EC%9D%B4%EB%AF%B8%EC%A7%80"><i
+                                                    class="far fa-image"
+                                                    style="font-size: 15px; margin-top: 1px; color: ; --fa-secondary-opacity: 1;"
+                                                    data-hasqtip="57"
+                                                    oldtitle="이미지가 담긴 게시물입니다. 클릭하시면 이 카테고리만 정렬하실 수 있습니다."
+                                                    title=""></i></a>
+                                        </div>
+                                        <a class="list_subject_a"
+                                            href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215336"><span
+                                                id="list_subject_1215336">
+                                                <font class="mobile_hide">
+                                                    게시물 333<span class="list_comment_num_a"
+                                                        href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215336&amp;cwin=1"
+                                                        data-hasqtip="58"
+                                                        oldtitle="최근 24시간 내에 남겨진 코멘트가 <span class=&quot;bold&quot;>있는</span> 게시물입니다. 클릭하시면 코멘트만 따로 보실 수 있습니다."
+                                                        title=""><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">2</em></span>
+                                                </font>
+                                                <font class="list_subject_mobile ">
+
+                                                    게시물 333<span class="list_comment_num_a"><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">2</em></span>
+                                                </font>
+                                            </span></a>
+                                    </div>
+                                </div><!-- 제목 끝 -->
+
+
+                                <!-- 조회수 -->
+                                <div class="list_table_col list_table_col_hit smalleng color_aaa">
+                                    1831 </div><!-- 조회수 끝 -->
+
+
+                                <!-- 닉네임 -->
+                                <div class="list_table_col list_table_col_name bold left color_555 cut_str">
+                                    <a class="sideview_a" onclick="call_sideview(this, 'jinjewus', '커리의석점', '', '');">
+                                        <span data-hasqtip="59" oldtitle="커리의석점 (jinjewus)" title=""><span
+                                                class="member">작성자3 </span></span></a>
+                                </div><!-- 닉네임 끝 -->
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="list_table_row relative  ">
+
+
+                                <!-- 팀태그 absolute div -->
+                                <!-- 팀태그 끝 -->
+
+
+                                <!-- 날짜 -->
+                                <div class="list_table_col list_table_col_date smalleng color_aaa">
+                                    <span class="list_table_dates">
+
+                                        04:09 </span>
+                                </div><!-- 날짜 끝 -->
+
+
+                                <!-- 추천 -->
+                                <div align="center"
+                                    class="list_table_col list_table_col_recommend smalleng bold theme_key2 help">
+                                    <span data-hasqtip="60" oldtitle="이 게시물이 받은 추천 수입니다." title="">
+                                        2 </span>
+                                </div>
+
+
+
+                                <!-- 제목 -->
+                                <div class="list_table_col list_table_col_subject" align="left">
+
+
+                                    <div class="float_left list_subject_subject">
+
+
+
+                                        <div id="list_icon_1215313" class="float_left list_subject_icon">
+                                            <a
+                                                href="/g2/bbs/board.php?bo_table=humor&amp;sca=%EC%9D%B4%EB%AF%B8%EC%A7%80"><i
+                                                    class="far fa-image"
+                                                    style="font-size: 15px; margin-top: 1px; color: ; --fa-secondary-opacity: 1;"
+                                                    data-hasqtip="61"
+                                                    oldtitle="이미지가 담긴 게시물입니다. 클릭하시면 이 카테고리만 정렬하실 수 있습니다."
+                                                    title=""></i></a>
+                                        </div>
+                                        <a class="list_subject_a"
+                                            href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215313"><span
+                                                id="list_subject_1215313">
+                                                <font class="mobile_hide">
+                                                    게시물 444<span class="list_comment_num_a"
+                                                        href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215313&amp;cwin=1"
+                                                        data-hasqtip="62"
+                                                        oldtitle="최근 24시간 내에 남겨진 코멘트가 <span class=&quot;bold&quot;>있는</span> 게시물입니다. 클릭하시면 코멘트만 따로 보실 수 있습니다."
+                                                        title=""><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">5</em></span>
+                                                </font>
+                                                <font class="list_subject_mobile ">
+
+                                                    게시물 444<span class="list_comment_num_a"><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">5</em></span>
+                                                </font>
+                                            </span></a>
+                                    </div>
+                                </div><!-- 제목 끝 -->
+
+
+                                <!-- 조회수 -->
+                                <div class="list_table_col list_table_col_hit smalleng color_aaa">
+                                    4745 </div><!-- 조회수 끝 -->
+
+
+                                <!-- 닉네임 -->
+                                <div class="list_table_col list_table_col_name bold left color_555 cut_str">
+                                    <a class="sideview_a" onclick="call_sideview(this, 'dedalus7', '디덜러스', '', '');">
+                                        <span data-hasqtip="63" oldtitle="디덜러스 (dedalus7)" title=""><span
+                                                class="member">작성자4 </span></span></a>
+                                </div><!-- 닉네임 끝 -->
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="list_table_row relative  ">
+
+
+                                <!-- 팀태그 absolute div -->
+                                <!-- 팀태그 끝 -->
+
+
+                                <!-- 날짜 -->
+                                <div class="list_table_col list_table_col_date smalleng color_aaa">
+                                    <span class="list_table_dates">
+
+                                        01:07 </span>
+                                </div><!-- 날짜 끝 -->
+
+
+                                <!-- 추천 -->
+                                <div align="center"
+                                    class="list_table_col list_table_col_recommend smalleng bold theme_key2 help">
+                                    <span data-hasqtip="64" oldtitle="이 게시물이 받은 추천 수입니다." title="">
+                                        7 </span>
+                                </div>
+
+
+
+                                <!-- 제목 -->
+                                <div class="list_table_col list_table_col_subject" align="left">
+
+
+                                    <div class="float_left list_subject_subject">
+
+
+
+                                        <div id="list_icon_1215301" class="float_left list_subject_icon">
+                                            <a
+                                                href="/g2/bbs/board.php?bo_table=humor&amp;sca=%EC%9D%B4%EB%AF%B8%EC%A7%80"><i
+                                                    class="far fa-image"
+                                                    style="font-size: 15px; margin-top: 1px; color: ; --fa-secondary-opacity: 1;"
+                                                    data-hasqtip="65"
+                                                    oldtitle="이미지가 담긴 게시물입니다. 클릭하시면 이 카테고리만 정렬하실 수 있습니다."
+                                                    title=""></i></a>
+                                        </div>
+                                        <a class="list_subject_a"
+                                            href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215301"><span
+                                                id="list_subject_1215301">
+                                                <font class="mobile_hide">
+                                                    게시물 555<span class="list_comment_num_a"
+                                                        href="/g2/bbs/board.php?bo_table=humor&amp;wr_id=1215301&amp;cwin=1"
+                                                        data-hasqtip="66"
+                                                        oldtitle="최근 24시간 내에 남겨진 코멘트가 <span class=&quot;bold&quot;>있는</span> 게시물입니다. 클릭하시면 코멘트만 따로 보실 수 있습니다."
+                                                        title=""><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">8</em></span>
+                                                </font>
+                                                <font class="list_subject_mobile ">
+
+                                                    게시물 555<span class="list_comment_num_a"><em
+                                                            class="list_comment_em extrasmalleng list_comment_new theme_key2 eng">8</em></span>
+                                                </font>
+                                            </span></a>
+                                    </div>
+                                </div><!-- 제목 끝 -->
+
+
+                                <!-- 조회수 -->
+                                <div class="list_table_col list_table_col_hit smalleng color_aaa">
+                                    3944 </div><!-- 조회수 끝 -->
+
+
+                                <!-- 닉네임 -->
+                                <div class="list_table_col list_table_col_name bold left color_555 cut_str">
+                                    <a class="sideview_a" onclick="call_sideview(this, 'jinjewus', '커리의석점', '', '');">
+                                        <span data-hasqtip="67" oldtitle="커리의석점 (jinjewus)" title=""><span
+                                                class="member">작성자5 </span></span></a>
+                                </div><!-- 닉네임 끝 -->
+                            </div>
+
+                        </div><!-- div#list_table -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
